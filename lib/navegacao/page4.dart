@@ -34,6 +34,7 @@ class Page4 extends StatelessWidget {
                       builder: (context) => const Page1(),
                     ),
                     (route) => route.isFirst); //remove tds pág até chegar a 1ª
+//  (route) => false); // como "false" eu removo todas ideal para telas de login
               },
               child: const Text('Page1 via PAGE'),
             ),
