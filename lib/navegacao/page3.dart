@@ -1,3 +1,4 @@
+import 'package:adf_flutter_navegacao/navegacao/page4.dart';
 import 'package:flutter/material.dart';
 
 class Page3 extends StatelessWidget {
@@ -14,10 +15,16 @@ class Page3 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
+              // onPressed: () {
+              //   Navigator.of(context).pushReplacement(MaterialPageRoute(
+              //     settings: const RouteSettings(name: 'page4'),
+              //     builder: (context) => const Page4(),
+              //   ));
+              // },
               onPressed: () {
-                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                Navigator.of(context).push(MaterialPageRoute(
                   settings: const RouteSettings(name: 'page4'),
-                  builder: (context) => const Page3(),
+                  builder: (context) => const Page4(),
                 ));
               },
               child: const Text('Page4 via PAGE'),
