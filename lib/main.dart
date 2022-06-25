@@ -1,3 +1,4 @@
+import 'package:adf_flutter_navegacao/navegacao/home_page.dart' as navegacao;
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,6 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Navegação',
+      home: navegacao.HomePage(),
+    );
   }
 }
