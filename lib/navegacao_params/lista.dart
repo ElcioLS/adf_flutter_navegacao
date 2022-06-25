@@ -18,7 +18,7 @@ class Lista extends StatelessWidget {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     settings: const RouteSettings(
-                        name: 'detalhe', arguments: {'id': 50}),
+                        name: 'detalhe', arguments: {'id': 39}),
                     builder: ((context) => const Detalhe()),
                   ),
                 );
