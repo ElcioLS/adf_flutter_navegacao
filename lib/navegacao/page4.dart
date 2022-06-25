@@ -15,14 +15,25 @@ class Page4 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
+              //Remover as paginas até voltar para a página 2
+              // onPressed: () {
+              //   Navigator.of(context).pushAndRemoveUntil(
+              //     MaterialPageRoute(
+              //       settings: const RouteSettings(name: 'page1'),
+              //       builder: (context) => const Page1(),
+              //     ),
+              //     ModalRoute.withName('page2'), // Remover as páginas até voltar para a Page 2
+              //   );
+              // },
+
+              //Remover todas as paginas até voltar para a página 1
               onPressed: () {
                 Navigator.of(context).pushAndRemoveUntil(
-                  MaterialPageRoute(
-                    settings: const RouteSettings(name: 'page1'),
-                    builder: (context) => const Page1(),
-                  ),
-                  ModalRoute.withName('page2'),
-                );
+                    MaterialPageRoute(
+                      settings: const RouteSettings(name: 'page1'),
+                      builder: (context) => const Page1(),
+                    ),
+                    (route) => route.isFirst); //remove tds pág até chegar a 1ª
               },
               child: const Text('Page1 via PAGE'),
             ),
