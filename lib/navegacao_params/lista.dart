@@ -16,6 +16,7 @@ class Lista extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context)
                     .pushNamed('/detalhe', arguments: {'id': 25});
+                //{'id': 25} aqui pode ser qualquer tipo, (Mapa, Objeto, ID, CLASSE) devo apenas saber converter na hora de recuperar
               },
               child: const Text('detalhe'),
             ),
