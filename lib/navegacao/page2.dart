@@ -24,6 +24,12 @@ class Page2 extends StatelessWidget {
               child: const Text('Page3 via PAGE'),
             ),
             ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Text('pop'),
+            ),
+            ElevatedButton(
               onPressed: () {},
               child: const Text('Page3 via Named'),
             ),
