@@ -45,9 +45,18 @@ class Page4 extends StatelessWidget {
               child: const Text('pop'),
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                    '/page1', ModalRoute.withName('/page2'));
+              },
               child: const Text('Page1 via Named'),
             ),
+            // ElevatedButton(
+            //   onPressed: () {
+            //     Navigator.of(context).pushNamed('/page1');
+            //   },
+            //   child: const Text('Page1 via Named'),
+            // ),
           ],
         ),
       ),
