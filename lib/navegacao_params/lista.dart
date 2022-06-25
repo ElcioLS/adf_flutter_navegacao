@@ -1,4 +1,3 @@
-import 'package:adf_flutter_navegacao/navegacao_params/detalhe.dart';
 import 'package:flutter/material.dart';
 
 class Lista extends StatelessWidget {
@@ -15,16 +14,23 @@ class Lista extends StatelessWidget {
           children: [
             TextButton(
               onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    settings: const RouteSettings(
-                        name: 'detalhe', arguments: {'id': 39}),
-                    builder: ((context) => const Detalhe()),
-                  ),
-                );
+                Navigator.of(context)
+                    .pushNamed('/detalhe', arguments: {'id': 25});
               },
               child: const Text('detalhe'),
             ),
+            // TextButton(
+            //   onPressed: () {
+            //     Navigator.of(context).push(
+            //       MaterialPageRoute(
+            //         settings: const RouteSettings(
+            //             name: 'detalhe', arguments: {'id': 39}),
+            //         builder: ((context) => const Detalhe()),
+            //       ),
+            //     );
+            //   },
+            //   child: const Text('detalhe'),
+            // ),
           ],
         ),
       ),

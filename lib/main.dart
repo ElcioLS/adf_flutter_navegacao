@@ -2,6 +2,7 @@ import 'package:adf_flutter_navegacao/navegacao/home_page.dart' as navegacao;
 import 'package:adf_flutter_navegacao/navegacao/page2.dart';
 import 'package:adf_flutter_navegacao/navegacao/page3.dart';
 import 'package:adf_flutter_navegacao/navegacao/page4.dart';
+import 'package:adf_flutter_navegacao/navegacao_params/detalhe.dart';
 import 'package:adf_flutter_navegacao/navegacao_params/lista.dart';
 import 'package:flutter/material.dart';
 
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         '/page3': (_) => const Page3(),
         '/page4': (_) => const Page4(),
         '/navegacao_param': (_) => const Lista(),
+        '/detalhe': (_) => const Detalhe(),
       },
     );
   }
